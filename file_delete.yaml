@@ -1,7 +1,0 @@
-- name: "deleting the file"
-  hosts: localhost
-  tasks:
-    - name: deleting txt file"
-      file:
-       path: $HOME/noonstg/file/fuckyou.txt
-       state: absent
