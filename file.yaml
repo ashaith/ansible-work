@@ -1,0 +1,7 @@
+- name: "file module run taks on all hosts"
+  hosts: localhost
+  tasks:
+   - name : ensure a direcotry exists
+     file:
+      path: $HOME/test_directory
+      state: directory
