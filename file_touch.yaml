@@ -1,7 +1,0 @@
-- name: "create a empty file"
-  hosts: localhost
-  tasks:
-    - name: "creating a initaial test file"
-      file: 
-       path: "$HOME/ansible_file.txt"
-       state: touch
