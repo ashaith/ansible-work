@@ -1,0 +1,8 @@
+- name: "symlink creating"
+  hosts: localhost
+  tasks:
+    - name: "create a new test file"
+      file:
+       src: $HOME/noonstg/file/fuckyou.txt
+       dest: $HOME/noonstg/file/fuckyou_link.txt
+       state: link

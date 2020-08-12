@@ -1,0 +1,12 @@
+- name: "create multiple direcotry in loop"
+  hosts: localhost
+  tasks:
+     - name: "multiple direocty"
+       file: 
+        path: "$HOME/{{ item }}"
+        state: directory
+
+       loop: 
+         - anvar_dir
+         - nandhu_dir
+         - kumar_dir

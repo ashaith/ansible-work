@@ -1,0 +1,12 @@
+- name: "file permission in ansiable"
+  hosts: localhost
+  tasks:
+   - name: "creating file permission"
+     file: 
+      path: $HOME/noonstg/file/anvarshahith.txt
+      state: touch
+      owner: ashaith
+      group: ashaith
+      mode: "0774"
+
+

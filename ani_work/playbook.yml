@@ -1,0 +1,28 @@
+---
+ - name: "creating simple webserver"
+   hosts: target1
+   gather_facts: no
+   tasks:
+    - name: "Trytesting ping"
+      ping:
+
+    - name: "package installtion"
+      yum: name={{item}} state=present
+      with_items:
+          - python
+          - python-pip
+    - name: "package to install mysql"
+      yum: name={{item}} state=present
+      with_items:
+          - mysql-server
+          - mysql-client
+
+
+    - name: "start the service"
+      service: 
+       name: mysql
+       state: started
+       enabled: yes
+
+
+    

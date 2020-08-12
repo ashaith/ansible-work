@@ -1,0 +1,3 @@
+steps:
+  - name: gcr.io/cloud-builder/git
+    args: ['clone '[https://github.com/Anvarshahith/ansible-work]']
